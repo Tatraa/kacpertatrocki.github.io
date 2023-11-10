@@ -25,15 +25,3 @@ const nav = document.querySelector('nav ul');
 mobileMenuButton.addEventListener('click', function() {
     nav.classList.toggle('show');
 });
-
-const form = document.querySelector('form');
-
-form.addEventListener('submit', function(event) {
-    const nameInput = document.querySelector('#name');
-    const emailInput = document.querySelector('#email');
-
-    if (nameInput.value.trim() === '' || emailInput.value.trim() === '') {
-        event.preventDefault();
-        alert('Proszę wypełnić wszystkie pola formularza.');
-    }
-});
