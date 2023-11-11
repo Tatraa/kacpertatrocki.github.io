@@ -4,7 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     text-align: center;
-    background: linear-gradient(-45deg, #1C539A, #0C3467, mediumblue, midnightblue);
+    background: linear-gradient(-45deg, #faf0e6, #fff0db, #eed9c4, #e4d5b7);
     background-size: 500% 500%;
     animation: gradient 15s ease infinite;
 }
@@ -64,19 +64,24 @@ section {
 
 .about-me2{
     color: white;
-    background: black;
+    border: solid #000000;
+    background: #d9b99b;
     padding: 0.1px;
+    font-size: medium;
+    -webkit-text-stroke: 0.01px black;
 }
 
 .about-me {
-    color: white;
+    color: black;
     border: solid #000000;
     animation: gradient 15s ease infinite;
+    -webkit-text-stroke: 0.01px black;
 }
 
 #projects {
     display: flex;
     flex-direction: row;
+
 }
 
 #projects p {
@@ -86,26 +91,33 @@ section {
 
 .projects-2 {
     color: white;
-    background: black;
+    font-family: "OCR A Extended";
+    font-size: large;
+    border: solid #000000;
+    background: #d9b99b;
     padding: 0.1px;
+    -webkit-text-stroke: 0.5px black;
 }
 
 .projects {
     border: solid #000000;
     animation: gradient 15s ease infinite;
-    color: white;
+    color: black;
+    -webkit-text-stroke: 0.01px black;
 }
 
 .social-media-2 {
+    border: solid #000000;
     color: white;
-    background: black;
+    background: #d9b99b;
     padding: 0.1px;
+    -webkit-text-stroke: 0.01px black;
 }
 
 .social-media {
-    background-color: #ffe0b2;
     border: solid #000000;
     text-align: center;
+    -webkit-text-stroke: 0.01px black;
 }
 
 footer {
