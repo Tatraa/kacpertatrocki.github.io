@@ -62,7 +62,6 @@ nav {
     justify-content: center;
     padding: 1em;
     border: solid #000000;
-    -webkit-text-stroke: 0.01px white;
 }
 
 nav a {
@@ -70,7 +69,6 @@ nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-
 }
 
 nav a:hover {
@@ -178,7 +176,7 @@ footer {
 
 @keyframes slidebg {
     to {
-        background-position:28vw;
+        background-position:200%;
     }
 }
 
@@ -188,11 +186,12 @@ footer {
     background: black;
     border-radius: 15%;
     transition-delay: 3s;
+    background-size: 200% 100%;
 }
 
 #resume:hover {
     transition-delay: 0.9s;
-    background-image: linear-gradient(120deg, black 0%, gray 60%, darkgray 80%, lightslategray 100%);
+    background-image: linear-gradient(120deg, black 0%, gray 40%, darkgray 50%, darkgray 70%, black 100%  );
     animation:slidebg 2.5s linear infinite;
 }
 
