@@ -6,7 +6,7 @@ body {
     text-align: center;
     background: linear-gradient(-45deg, #faf0e6, #fff0db, #eed9c4, #e4d5b7);
     background-size: 500% 500%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 3s ease infinite;
 }
 
 header {
@@ -16,6 +16,34 @@ header {
     padding: 1em;
     border: solid #000000;
 }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 24% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+header .div-preview h3 {
+    overflow: hidden;
+    justify-content: center;
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    /*animation: typing 3s steps(40) forwards, blink-caret 0.75s infinite; */
+    animation: blink-caret 0.75s infinite;
+}
+
+/* @media screen and (max-width: 600px) {
+    header .div-preview h3{
+        white-space: normal;
+    }
+} */
 
 @keyframes gradient {
     0% {
@@ -87,7 +115,6 @@ section {
 
 #projects p {
     flex: 1;
-    /*margin: 0; /* Usuwa domyślne marginesy odstępu od paragrafów */
 }
 
 @media (max-width: 200px) {
@@ -151,20 +178,22 @@ footer {
 
 @keyframes slidebg {
     to {
-        background-position:20vw;
+        background-position:28vw;
     }
 }
 
 #resume {
     font-family: Candara, serif;
-    background: red;
+    color: white;
+    background: black;
     border-radius: 15%;
+    transition-delay: 3s;
 }
 
-resume:hover {
-    transition: 0.3s;
-    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-    animation:slidebg 5s linear infinite;
+#resume:hover {
+    transition-delay: 0.9s;
+    background-image: linear-gradient(120deg, black 0%, gray 60%, darkgray 80%, lightslategray 100%);
+    animation:slidebg 2.5s linear infinite;
 }
 
 .transition-section {
