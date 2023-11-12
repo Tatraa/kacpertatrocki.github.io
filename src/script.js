@@ -1,27 +1,20 @@
-window.addEventListener('scroll', function() {
-    const scrollPosition = window.scrollY;
+document.getElementById('resume').addEventListener('click', function () {
+    // Specify the path to the PDF file
+    const filePath = 'images/example.pdf';
 
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop - 50;
-        const sectionBottom = section.offsetTop + section.offsetHeight - 50;
+    // Create a link element
+    const link = document.createElement('a');
 
-        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-            const sectionId = section.getAttribute('id');
-            const correspondingNavLink = document.querySelector(`nav a[href="#${sectionId}"]`);
-            correspondingNavLink.classList.add('active');
-        } else {
-            const sectionId = section.getAttribute('id');
-            const correspondingNavLink = document.querySelector(`nav a[href="#${sectionId}"]`);
-            correspondingNavLink.classList.remove('active');
-        }
-    });
-});
+    // Set the download attribute and create a download URL
+    link.download = 'example.pdf';
+    link.href = filePath;
 
+    // Append the link to the document
+    document.body.appendChild(link);
 
-const mobileMenuButton = document.querySelector('.mobile-menu-button');
-const nav = document.querySelector('nav ul');
+    // Programmatically trigger a click on the link
+    link.click();
 
-mobileMenuButton.addEventListener('click', function() {
-    nav.classList.toggle('show');
+    // Remove the link from the document
+    document.body.removeChild(link);
 });
