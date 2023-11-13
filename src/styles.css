@@ -7,6 +7,9 @@ body {
     background: linear-gradient(-45deg, #faf0e6, #fff0db, #eed9c4, #e4d5b7);
     background-size: 500% 500%;
     animation: gradient 3s ease infinite;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -18,8 +21,12 @@ header {
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 24% }
+    from {
+        width: 0;
+    }
+    to {
+        width: 0;
+    }
 }
 
 @keyframes blink-caret {
@@ -44,6 +51,21 @@ header .div-preview h3 {
         white-space: normal;
     }
 } */
+
+.description {
+    color: black;
+    
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: smaller;
+    border: none;
+    font-family: Arial, serif;
+}
+
+.name {
+    color: black;
+    -webkit-text-stroke: 0.01px white;
+}
 
 @keyframes gradient {
     0% {
@@ -124,12 +146,11 @@ section {
 
 .projects-2 {
     color: white;
-    font-family: "OCR A Extended";
     font-size: large;
     border: solid #000000;
     background: #d9b99b;
     padding: 0.1px;
-    -webkit-text-stroke: 0.5px black;
+    -webkit-text-stroke: 0.01px black;
 }
 
 .project-item {
@@ -166,6 +187,7 @@ footer {
     text-align: center;
     padding: 1px;
     font-family: Arial, sans-serif;
+    margin-top: auto;
 }
 
 .preview{
@@ -197,4 +219,21 @@ footer {
 
 .transition-section {
     transition: background-color 0.5s ease; /* Smooth transition on background-color property */
+}
+
+.hello {
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    font-size: larger;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #000; /* Opcjonalna animowana "kreska" symbolizująca pisanie */
+    margin-right: auto;
+    animation: blink-caret 0.75s infinite;
+}
+
+.introduce {
+    font-size: smaller;
+    font-family: Arial;
 }
