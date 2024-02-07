@@ -54,17 +54,26 @@ header .div-preview h3 {
 
 .description {
     color: black;
-    
-    margin-right: 5%;
-    margin-left: 5%;
+    text-align: center;
+    flex: auto;
+    margin-right: 4%;
+    margin-left: 4%;
     font-size: smaller;
     border: none;
     font-family: Arial, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .name {
+    margin-top: 2px;
     color: black;
+    text-align: center;
     -webkit-text-stroke: 0.01px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes gradient {
