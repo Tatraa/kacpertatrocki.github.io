@@ -6,7 +6,7 @@ document.getElementById('resume').addEventListener('click', function () {
     const link = document.createElement('a');
 
     // Set the download attribute and create a download URL
-    link.download = 'KacperTatCV.pdf';
+    link.download = 'KacTatCV.pdf';
     link.href = filePath;
 
     // Append the link to the document
