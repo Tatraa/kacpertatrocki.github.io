@@ -1,6 +1,6 @@
 document.getElementById('resume').addEventListener('click', function () {
     // Specify the path to the PDF file
-    const filePath = 'images/KacperTatCV.pdf';
+    const filePath = 'images/KacTatCV.pdf';
 
     // Create a link element
     const link = document.createElement('a');
